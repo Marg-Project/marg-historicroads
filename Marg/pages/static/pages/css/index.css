@@ -2,20 +2,12 @@
     --color-bg: 43 79 96
 }
 
-body{
-    background-color: var(--color-bg);
-}
-
-nav {
-    background-color: var(--color-bg);
-}
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  nav ul li {
+nav ul li {
     display: inline;
   } 
