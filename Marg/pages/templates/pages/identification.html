@@ -12,15 +12,15 @@
     
     <div id="root">
             <nav>
-                    <a>Home</a>
+                <a href="{% url 'home'%}">Home</a>
                     <div>
                         <ul>
-                            <li class = "nav"><a>About</a></li>
-                            <li class = "nav"><a>Explore</a></li>
-                            <li class = "nav"><a>Identification & Documentation</a></li>
-                            <li class = "nav"><a>Conservation</a></li>
-                            <li class = "nav"><a>Management</a></li>
-                            <li class = "nav"><a>The MARG Network</a></li>
+                            <li class = "nav"><a href="{% url 'about'%}">About</a></li>
+                            <li class = "nav"><a href="{% url 'explore'%}">Explore</a></li>
+                            <li class = "nav"><a href="{% url 'identification_documentation'%}">Identification & Documentation</a></li>
+                            <li class = "nav"><a href="{% url 'conservation'%}">Conservation</a></li>
+                            <li class = "nav"><a href="{% url 'management'%}">Management</a></li>
+                            <li class = "nav"><a href="{% url 'network'%}">The MARG Network</a></li>
                         </ul>
                     </div>
             </nav>
