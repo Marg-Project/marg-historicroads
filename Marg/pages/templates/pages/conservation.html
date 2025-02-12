@@ -1,31 +1,9 @@
-{% load static %}
+{% extends "pages/base.html" %}
 
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{%static 'pages/css/index.css'%}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARG</title>
-</head>
+{% block title %}MARG{% endblock %}
 
-<body>
-    
-    <div id="root">
-            <nav>
-                <a href="{% url 'home'%}">Home</a>
-                    <div>
-                        <ul>
-                            <li class = "nav"><a href="{% url 'about'%}">About</a></li>
-                            <li class = "nav"><a href="{% url 'explore'%}">Explore</a></li>
-                            <li class = "nav"><a href="{% url 'identification_documentation'%}">Identification & Documentation</a></li>
-                            <li class = "nav"><a href="{% url 'conservation'%}">Conservation</a></li>
-                            <li class = "nav"><a href="{% url 'management'%}">Management</a></li>
-                            <li class = "nav"><a href="{% url 'network'%}">The MARG Network</a></li>
-                        </ul>
-                    </div>
-            </nav>
-            <h1>Conservation</h1>
-    </div>
-</body>
-    
-</html>
+{% block content %}
+<h1>
+    Conservation
+</h1>
+{% endblock %}

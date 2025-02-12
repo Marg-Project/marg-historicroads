@@ -1,13 +1,15 @@
 <nav>
-    <a href="{% url 'home'%}">Home</a>
+    <div class = 'navbar-container'>
+        <a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a>
         <div>
             <ul>
-                <li class = "nav"><a href="{% url 'about'%}">About</a></li>
-                <li class = "nav"><a href="{% url 'explore'%}">Explore</a></li>
-                <li class = "nav"><a href="{% url 'identification_documentation'%}">Identification & Documentation</a></li>
-                <li class = "nav"><a href="{% url 'conservation'%}">Conservation</a></li>
-                <li class = "nav"><a href="{% url 'management'%}">Management</a></li>
-                <li class = "nav"><a href="{% url 'network'%}">The MARG Network</a></li>
+                <li><a href="/about/" class="{% if request.path == '/about/' %}active{% endif %}">About</a></li>
+                <li><a href="/explore/" class="{% if request.path == '/explore/' %}active{% endif %}">Explore</a></li>
+                <li><a href="/identification_documentation/" class="{% if request.path == '/identification_documentation/' %}active{% endif %}">Identification & Documentation</a></li>
+                <li><a href="/conservation/" class="{% if request.path == '/conservation/' %}active{% endif %}">Conservation</a></li>
+                <li><a href="/management/" class="{% if request.path == '/management/' %}active{% endif %}">Management</a></li>
+                <li><a href="/network/" class="{% if request.path == '/network/' %}active{% endif %}">Network</a></li>
             </ul>
         </div>
+    </div>
 </nav>
