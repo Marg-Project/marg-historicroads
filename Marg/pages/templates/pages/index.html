@@ -1,7 +1,23 @@
 {% extends "pages/base.html" %}
+{%load static%}
 
 {% block title %}MARG{% endblock %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'pages/css/index.css' %}">
+{% endblock %}
+
 {% block content %}
-<h1>Home</h1>
+<div class="container">
+    <div class="image-container">
+        <div class="logo">
+            <img src="{% static 'assets/marg_text.png' %}" class="logo-image">
+            <img src="{% static 'assets/artboard_logo.png' %}" alt="">
+        </div>
+    </div>
+
+    <h2 class="heading">Mapping Ancient and Historic Routes using Geo-Spatial Tools</h2>
+    <hr class="divider">
+    <h3 class="subheading">Funded By SHRI Science and Heritage Research Initiative, Department of Science & Technology, GOI</h3>
+</div>
 {% endblock %}

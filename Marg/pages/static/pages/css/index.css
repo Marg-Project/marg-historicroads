@@ -1,0 +1,64 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    background: linear-gradient(rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.4)) 0% 10% / cover no-repeat, url('../../assets/bg-884bcc67.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 16rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Image Section */
+.image-container {
+    padding-top: 4rem;
+    padding-left: 6rem;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo-image {
+    position: absolute;
+    transform: translateY(-5rem);
+    left: 2.25rem;
+}
+
+/* Heading */
+.heading {
+    color: #EAD3CB;
+    font-weight: 550;
+    letter-spacing: 0.05em;
+    font-size: 1.875rem;
+}
+
+/* Divider */
+.divider {
+    width: 20vw;
+    height: 0.25rem;
+    /* margin: 1rem auto; */
+    background-color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+/* Subheading */
+.subheading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #BDC7C9;
+}

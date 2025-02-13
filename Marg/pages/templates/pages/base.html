@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}MARG{% endblock %}</title>
+    
+    <!-- Global CSS -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'pages/css/navbar.css' %}">
+    
+    <!-- To add page-specific CSS -->
+    {% block extra_css %}{% endblock %}
 </head>
 <body>
-    {% include 'pages/navbar.html' %}  <!-- Reusable Navbar -->
+    <header>
+        <!-- Reusable Navbar -->
+        {% include 'pages/navbar.html' %}  
+    </header>
+    
     <main>
-        {% block content %}{% endblock %}  <!-- Placeholder for page content -->
+        <!-- Placeholder for page content -->
+        {% block content %}{% endblock %}  
     </main>
 </body>
 </html>

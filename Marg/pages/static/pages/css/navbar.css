@@ -1,0 +1,55 @@
+:root {
+  --color-bg: 43 79 96;
+}
+
+/* Navbar container */
+.navbar-container {
+  background-color: rgb(var(--color-bg)/.95);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2.5%;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar brand text */
+.navbar-container a {
+  text-decoration: none;
+  font-size: calc(1.5vw + 0.5rem);
+  font-weight: 100;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Navbar menu */
+.navbar-container ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.navbar-container ul li {
+  display: inline;
+}
+
+.navbar-container ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Active link style */
+.navbar-container a.active {
+  border-bottom: 2px none white;
+}
+
+/* Remove margin for body to allow normal scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
